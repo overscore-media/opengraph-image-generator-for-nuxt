@@ -13,7 +13,7 @@
         <a href="https://github.com/overscore-media/opengraph-image-generator-for-nuxt" target="_blank">
           See the code on GitHub
         </a>
-        Brought to you by <a href="https://overscore.media" target="_blank">
+        Brought to you by: <a href="https://overscore.media" target="_blank">
           OverScore Media
         </a>
       </section>
@@ -87,7 +87,6 @@ export default {
     if (process.browser && !this.page.name && this.throwError) {
       this.$nuxt.error({ statusCode: 404 })
     }
-    console.dir(this.$nuxt)
   },
   fetchOnServer: true
 }

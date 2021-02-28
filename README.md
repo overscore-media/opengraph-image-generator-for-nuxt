@@ -23,7 +23,7 @@ Made by [OverScore Media](https://overscore.media), a distributed software, web,
 
 #### Default:
 
-![A rectangular preview of what a link posted to Facebook might look like - has chalkboard-like drawings overlayed with a transparent dark foreground, the words "Other Page" in the middle, and OverScore Media's logo at the bottom](static/other-post-example.png)
+![A rectangular preview of what a link posted to Facebook might look like - has chalkboard-like drawings overlayed with a transparent dark foreground, the words "Other Page" in the middle, and OverScore Media's logo at the bottom](static/other-page-example.png)
 
 #### Page with a custom header:
 

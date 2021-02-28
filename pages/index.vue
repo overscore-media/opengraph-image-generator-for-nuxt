@@ -13,7 +13,7 @@
         <a href="https://github.com/overscore-media/opengraph-image-generator-for-nuxt" target="_blank">
           See the code on GitHub
         </a>
-        Brought to you by <a href="https://overscore.media" target="_blank">
+        Brought to you by: <a href="https://overscore.media" target="_blank">
           OverScore Media
         </a>
       </section>
@@ -75,7 +75,6 @@ export default {
 .container {
   display: flex;
   flex-flow: column wrap;
-  width: 100vw;
   justify-content: center;
   align-items: center;
   gap: 2rem;
