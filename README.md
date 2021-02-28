@@ -6,7 +6,7 @@ We were inspired by Vercel's [og-image](https://github.com/vercel/og-image) serv
 
 Feel free to use this as a reference, but it's probably best not to base a new project completely off it. At this point there are just a lot of moving parts. Maybe in the future we could make it a self-contained Nuxt module, or the Nuxt team might make something that renders it obsolete ;].
 
-Live at https://ogigfn.overscore.media
+Live at https://ogigfn.overscore.media [thanks, Netlify!]
 
 Made by [OverScore Media](https://overscore.media), a distributed software, web, and digital design agency based in Peterborough, Ontario. If you're looking for work or have a project in mind [we offer free, comprehensive consultations for all our clients] do drop us a line.
 
