@@ -18,20 +18,20 @@ Made by [OverScore Media](https://overscore.media), a distributed software, web,
 - Make sure you have Git, Node.js, Yarn, etc. installed (Node 14 and up is very much recommended)
 - You may need the Visual Studio C++ Tools (or whatever they're called these days) to develop on Windows
   - (I use Kali Linux in WSL, so it's probable that I may have broken/hampered Windows compatibility in some way)
-- Clone the repo from GitLab (I recommend setting up an SSH key for GitLab)
+- Clone the repo from GitHub (I recommend setting up the GitHub CLI)[https://github.com/cli/cli]
 - `yarn` to install all the Node dependencies
 
 ---
 
 ### Helpful Commands
 - `yarn dev` - to spin up a dev server on `localhost:1234`
-- `yarn prod` - to generate the static files and spin up a production server on `localhost:5678`
+- `yarn prod` - to generate the static files (`yarn generate`) and spin up a production server on `localhost:5678`
 - `yarn lint` - to lint all JavaScript/CSS [including Vue/SCSS files]
 - `yarn fix` - to lint all JavaScript/CSS, auto-fixing any problems that can be auto-fixed
 
 ---
 
-### Files (in decending alphabetical order for some reason)
+### Files (in descending alphabetical order for some reason)
 
 `yarn.lock` - the lockfile for Node dependencies, as managed by `yarn`
 
@@ -62,7 +62,7 @@ Made by [OverScore Media](https://overscore.media), a distributed software, web,
     - The Inter-Black typeface is here for the OpenGraph images, but you can easily swap it out
       - (just remember to update the `registerFont` call in nuxt.config.js if you do change the font)
   - `images`
-    - Mostly for SVGs, small icons, non-dynamic background images, etc.
+    - Right now the default background and global template for generated OG images are here
   - `scss`
     - The global styles for the site (page- and component-specific styles are mostly in their own page/component's Vue file)
     - Also global SASS mixins and variables
