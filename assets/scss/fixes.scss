@@ -1,0 +1,79 @@
+// stylelint-disable selector-pseudo-class-no-unknown
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+::selection {
+  background-color: $magentish;
+}
+
+::-webkit-scrollbar {
+  width: 0.85rem;
+
+  &-track {
+    background-color: $overdark;
+  }
+
+  &-thumb {
+    background-color: $magentish;
+    transition: background-color 0.5s ease;
+
+    &:hover {
+      background-color: $greenwich;
+      transition: background-color 0.5s ease;
+    }
+  }
+}
+
+// Probably a bit much for all anchors
+a {
+  color: $magentish;
+  text-decoration: none;
+  font-weight: 600;
+  transform: scale(1);
+  transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+  &:hover {
+    color: $bluesh;
+    transform: scale(1.1);
+    transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+}
+
+button,
+input,
+select,
+textarea {
+  border: 0;
+}
+
+hr {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-block-start: 0 !important;
+  margin-block-end: 0 !important;
+}
+
+// For making pages like /privacy and /terms transition nicer
+.content-transition-enter-active, .content-transition-leave-active {
+  transition: opacity 0.75s;
+}
+
+.content-transition-enter, .content-transition-leave-active {
+  opacity: 0;
+}

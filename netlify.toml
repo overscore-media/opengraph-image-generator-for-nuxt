@@ -1,0 +1,8 @@
+[build]
+  environment = { NODE_VERSION = "14" }
+  publish = "dist/"
+  command = "yarn generate"
+
+[dev]
+  environment = { NODE_VERSION = "14" }
+  command = "yarn dev"

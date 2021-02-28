@@ -1,0 +1,33 @@
+body {
+  background-color: $body-bg;
+  overflow-x: hidden;
+}
+
+.hidden {
+  display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6, p, div {
+  color: $text-primary;
+}
+
+.heading {
+  text-align: center;
+  font-size: xx-large;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.subheading {
+  text-align: center;
+  font-size: large;
+  padding: 1.5rem;
+  line-height: 150%;
+}
+
+textarea, input, select {
+  background-color: lighten($body-bg, 4);
+  color: $text-primary;
+  font-size: 1.1rem;
+  @include inter-font;
+}

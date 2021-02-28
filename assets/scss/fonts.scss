@@ -1,0 +1,9 @@
+// Setting up font-familys
+// See also: ~/assets/scss/mixins/fonts.scss
+
+@import url("https://rsms.me/inter/inter.css");
+
+// Make Inter the default font
+html {
+  @include inter-font;
+}

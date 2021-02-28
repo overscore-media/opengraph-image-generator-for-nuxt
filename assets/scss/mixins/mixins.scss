@@ -1,0 +1,20 @@
+/* stylelint-disable length-zero-no-unit */
+
+// Import other mixin files
+@import "~assets/scss/mixins/fonts.scss";
+
+// Sass MQ config - [https://github.com/sass-mq/sass-mq
+$mq-responsive: true;
+
+$mq-breakpoints: (
+  mobile_p: 0px,
+  mobile_l: 480px,
+  tablet_p: 768px,
+  tablet_l: 992px,
+  desktop: 1200px,
+  huge: 2160px,
+);
+
+$mq-static-breakpoint: tablet;
+
+@import "~sass-mq/mq";

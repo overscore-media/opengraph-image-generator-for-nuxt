@@ -1,0 +1,19 @@
+// See https://overscore.media/brand for more information about our brand colours
+@use "sass:color";
+
+// Main Colours
+$overdark:  #262626;
+$dargrey:   #989eb9;
+$magentish: #cf5986;
+$greenwich: #59cfa2;
+$bluesh:    #008dd5;
+
+// Mixes
+$tealy: color.mix($bluesh, $greenwich, 50%);
+$darkish: color.mix($overdark, $dargrey, 50%);
+$darkbluesh: color.mix($overdark, $bluesh, 60%);
+
+// Specific Uses
+$body-bg: color.mix($overdark, $dargrey, 90%);
+$footer-bg: color.mix($overdark, $dargrey, 75%);
+$text-primary: color.mix($tealy, white, 15%);

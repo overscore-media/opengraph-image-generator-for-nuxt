@@ -1,0 +1,114 @@
+.nuxt-content {
+  width: 100%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  // https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  word-break: break-word;
+  hyphens: auto;
+
+  @include mq($from: tablet_p) {
+    width: 90%;
+  }
+
+  @include mq($from: desktop) {
+    width: 100%;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+
+    &:nth-of-type(odd) {
+      color: lighten($magentish, 25%);
+    }
+
+    &:nth-of-type(even) {
+      color: lighten($bluesh, 25%);
+    }
+  }
+
+  h4 {
+    font-size: 1.25rem;
+    font-weight: normal;
+    font-style: italic;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+  }
+
+  h6 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 165%;
+  }
+
+  hr {
+    margin: 2rem 1rem;
+  }
+
+  ul {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  blockquote {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+
+    p {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &--wrapper {
+    display: flex;
+    max-width: 100vw;
+    justify-content: center;
+    align-self: center;
+
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+}
+
+// For pages like /privacy and /terms, where
+// content is loaded in from Nuxt Content
+.dynamic--page--content {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+
+  .hero--divider {
+    width: 100vw;
+    margin: 0;
+  }
+
+  .main--content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-self: center;
+    max-width: 1000px;
+  }
+}

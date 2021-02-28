@@ -1,0 +1,19 @@
+// Some additional font configuration
+
+@mixin inter-font {
+  font-family: "Inter", sans-serif !important;
+
+  @supports (font-variation-settings: normal) {
+    font-family: "Inter var", sans-serif !important;
+    // Variable Font Settings
+    font-feature-settings: "calc" on; // Contextual Alternatives
+    font-feature-settings: "tnum" on; // Tabular Numbers
+    font-feature-settings: "rlig" on; // Ligatures
+    font-feature-settings: "dlig" on; // Discretionary Ligatures
+    font-feature-settings: "ss01" on; // Alternate Digits
+    font-feature-settings: "ss02" on; // Disambiguation
+    font-feature-settings: "ss03" on; // Curvy R's with Round Neighbours
+    font-feature-settings: "zero" on; // Slashed Zeros
+    font-feature-settings: "salt" on; // Stylistic Alternates
+  }
+}
