@@ -91,12 +91,7 @@ export default {
               // og:title, not the page title
               const ogTitle = meta.getAttribute('content')
 
-              if (ogTitle.includes('OGIGFN')) {
-                // Remove the brand name from the title if necessary
-                pageMeta.name = meta.getAttribute('content').substr(18)
-              } else {
-                pageMeta.name = meta.getAttribute('content')
-              }
+              pageMeta.name = meta.getAttribute('content')
             }
           })
 
@@ -142,6 +137,9 @@ export default {
         ctx.fillStyle = '#262626'
         ctx.fillRect(0, 0, canvas.width, canvas.height)
 
+        // Because otherwise the opengraph directory isn't included automatically in /dist
+        const distDirectory = context.options.generate.dir
+
         // Iterate over the list of pages with metadata
         pagesMetaForPreviewImages.forEach((page) => {
           // Fill the canvas with overdark again
@@ -184,8 +182,8 @@ export default {
                 ctx.fillText(page.name, 600, 314)
               }
 
-              // Write the canvas to a file
-              fs.outputFile(path.join(__dirname, `./static/media/opengraph/${page.path}.png`), canvas.toBuffer())
+              // Write the canvas to a file (specifically, a file in the /dist/media/opengraph directory)
+              fs.outputFile(path.join(distDirectory, `/media/opengraph/${page.path}.png`), canvas.toBuffer())
             })
           })
 
