@@ -6,9 +6,17 @@
       <h3 class="heading">
         Here's another page just to show that routing works
       </h3>
-      <nuxt-link to="/">
-        Return to the Homepage
-      </nuxt-link>
+      <section class="container">
+        <nuxt-link to="/">
+          Return to the Homepage
+        </nuxt-link>
+        <a href="https://github.com/overscore-media/opengraph-image-generator-for-nuxt" target="_blank">
+          See the code on GitHub
+        </a>
+        Brought to you by <a href="https://overscore.media" target="_blank">
+          OverScore Media
+        </a>
+      </section>
       <hr />
     </main>
   </div>

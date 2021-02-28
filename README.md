@@ -4,13 +4,33 @@ A demonstration of how to use the Nuxt Content module, `node-canvas`, and some t
 
 We were inspired by Vercel's [og-image](https://github.com/vercel/og-image) service, and wanted to try something a bit different using Nuxt and static site generation.
 
-Feel free to use this as a reference, but it's probably best not to base a new project completely off it. At this point there are just a lot of moving parts. Maybe in the future we could make it a self-contained Nuxt module, or the Nuxt team might make something that renders it obsolete ;].
+Feel free to use this as a reference, but it's probably best not to base a new project completely off it. At this point there are just a lot of moving parts. Maybe in the future we could make it a self-contained Nuxt module, or the Nuxt team might make something new and awesome that renders it obsolete.
+
+Also, the site itself is a bit of a mess at the moment, so don't hold that against us, and focus on the logic that makes the image generation work - ;]
+
+Check out some different routes of this site at [https://www.opengraph.xyz/](https://www.opengraph.xyz/)
 
 Live at https://ogigfn.overscore.media [thanks, Netlify!]
+
+---
 
 Made by [OverScore Media](https://overscore.media), a distributed software, web, and digital design agency based in Peterborough, Ontario. If you're looking for work or have a project in mind [we offer free, comprehensive consultations for all our clients] do drop us a line.
 
 #### OverScore Media - Your Message, Levelled Up!
+---
+
+### Examples:
+
+#### Default:
+
+![A rectangular preview of what a link posted to Facebook might look like - has chalkboard-like drawings overlayed with a transparent dark foreground, the words "Other Page" in the middle, and OverScore Media's logo at the bottom](static/other-post-example.png)
+
+#### Page with a custom header:
+
+![A rectangular preview of what a link posted to Facebook might look like - has a clipart picture overlayed with a transparent dark foreground, the words "Other Post" in the middle, and OverScore Media's logo at the bottom](static/other-post-example.png)
+
+(defined in the `header` variable in the page's `.md` front-matter)
+
 ---
 
 ### Development Setup
@@ -104,3 +124,5 @@ Made by [OverScore Media](https://overscore.media), a distributed software, web,
 [Sass-MQ](https://github.com/sass-mq/sass-mq)
 
 [node-canvas Documentation](https://github.com/Automattic/node-canvas)
+
+[Undraw - Offers awesome vector images for free!](https://undraw.co/)

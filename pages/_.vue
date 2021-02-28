@@ -8,7 +8,15 @@
       <div class="page--header--background"></div>
     </header>
     <main class="main--page--content">
-      <nuxt-link to="/">Return to the Homepage</nuxt-link>
+      <section class="container">
+        <nuxt-link to="/">Return to the Homepage</nuxt-link>
+        <a href="https://github.com/overscore-media/opengraph-image-generator-for-nuxt" target="_blank">
+          See the code on GitHub
+        </a>
+        Brought to you by <a href="https://overscore.media" target="_blank">
+          OverScore Media
+        </a>
+      </section>
       <Content v-if="page" :document="page" />
     </main>
   </div>
